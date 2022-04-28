@@ -25,11 +25,8 @@
     export default {
         name: 'NavbarComp',
 
-        // Data
-        data() {
-            return {
-                arrayNavbar: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop']
-            }
+        props:{
+            arrayNavbar: []
         }
     }
 </script>

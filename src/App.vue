@@ -10,6 +10,13 @@
 
     </header>
 
+    <!-- Main -->
+    <main>
+
+      <MainComp />
+
+    </main>
+
   </div>
 
 </template>
@@ -17,14 +24,17 @@
 <script>
   // Import components
   import HeaderComp from './components/HeaderComp.vue'
+  import MainComp from './components/MainComp.vue'
 
   export default {
 
     name: 'App',
 
     components: {
-      HeaderComp
+      HeaderComp,
+      MainComp
     }
+    
   }
 </script>
 

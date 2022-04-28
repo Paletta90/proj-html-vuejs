@@ -3,7 +3,7 @@
     <div id="header">
 
         <!-- NavBar sinistra-->
-        <NavbarComp />
+        <NavbarComp :arrayNavbar="arrayNavbar" />
 
         <!-- Logo centrale -->
         <LogoComp />
@@ -29,6 +29,13 @@
             NavbarComp,
             LogoComp,
             InputComp
+        },
+
+        // Data
+        data() {
+            return {
+                arrayNavbar: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop']
+            }
         }
 
     }
