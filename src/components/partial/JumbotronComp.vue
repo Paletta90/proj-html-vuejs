@@ -10,7 +10,7 @@
 
         <!-- Button -->
         <div class="button">
-            <p>Download free guidebook <i class="fa-solid fa-right-long"></i> </p>
+            <p>Download free guidebook <i class="fa-solid fa-right-long"></i></p>
         </div>
 
     </section>
@@ -37,6 +37,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        // Flexo i titoli e il button al centro del jumbotron
         @include flex(column, center, center);
 
         h2{
