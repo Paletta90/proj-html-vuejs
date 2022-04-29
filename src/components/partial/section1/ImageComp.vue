@@ -35,10 +35,6 @@
         position: relative;
 
         .circle {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            border: 7px solid $color-texasRose;
             position: absolute;
             left: -35%;
         }

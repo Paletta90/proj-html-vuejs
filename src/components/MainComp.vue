@@ -8,7 +8,11 @@
         <!-- Contenitore selle sezione centrate al x% -->
         <div id="container">
 
+            <!-- Prima sezione -->
             <FirstSection />
+
+            <!-- Seconda sezione -->
+            <SecondSection />
 
         </div>
 
@@ -21,13 +25,15 @@
     // Import components
     import JumbotronComp from './partial/JumbotronComp.vue'
     import FirstSection from './partial/section1/FirstSection.vue'
+    import SecondSection from './partial/section2/SecondSection.vue'
 
     export default {
         name: 'MainComp',
 
         components: {
             JumbotronComp,
-            FirstSection
+            FirstSection,
+            SecondSection
         }
     }
 </script>

@@ -34,13 +34,14 @@
       HeaderComp,
       MainComp
     }
-    
+
   }
 </script>
 
 <style lang="scss">
   // Import file.scss
   @import './style/mixin.scss';
+  @import './style/variabili.scss';
 
   // Mixin per reset
   * {
@@ -51,6 +52,14 @@
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+
+    // Utility
+    .circle {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 7px solid $color-texasRose;
+    }
+
   }
 </style>
