@@ -14,6 +14,9 @@
             <!-- Seconda sezione -->
             <SecondSection />
 
+            <!-- Terza sezione -->
+            <ThirdSection />
+
         </div>
 
     </div>
@@ -26,6 +29,7 @@
     import JumbotronComp from './partial/JumbotronComp.vue'
     import FirstSection from './partial/section1/FirstSection.vue'
     import SecondSection from './partial/section2/SecondSection.vue'
+    import ThirdSection from './partial/section3/ThirdSection.vue'
 
     export default {
         name: 'MainComp',
@@ -33,7 +37,8 @@
         components: {
             JumbotronComp,
             FirstSection,
-            SecondSection
+            SecondSection,
+            ThirdSection
         }
     }
 </script>

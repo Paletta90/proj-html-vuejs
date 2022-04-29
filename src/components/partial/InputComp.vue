@@ -8,7 +8,7 @@
             <!-- Icona carrello -->
             <div class="carrello">
                 <i class="fa-solid fa-cart-shopping"></i>
-                <div class="circle">0</div>
+                <div class="circle-basket">0</div>
             </div>
 
 
@@ -57,7 +57,7 @@
                 position: relative;
                 margin-right: 15px;
             }
-            .circle{
+            .circle-basket{
                 width: 15px;
                 height: 15px;
                 font-size: 10px;

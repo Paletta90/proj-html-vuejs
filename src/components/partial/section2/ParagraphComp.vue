@@ -1,13 +1,11 @@
 <template>
 
     <!-- Descrizione di destra -->
-    <div>
+    <div id="contenitore">
         
-        <p>How we work</p>
+        <TitleComp :smallText="smallText" :title="title" :colorText="colorText" />
 
-        <h2>Upgrade Your Skills <span>Upgrade Your Life</span></h2>
-
-        <p>Opening up more oppurtunities in front of you to get the ticket to more enjoyable door in life. Getting
+        <p class="paragraph">Opening up more oppurtunities in front of you to get the ticket to more enjoyable door in life. Getting
             equipped with new skills for new sets on insights into your carrer. MaxCoach accompany learners in every
             stage of learning</p>
 
@@ -18,9 +16,25 @@
 </template>
 
 <script>
+    // import components
+    import TitleComp from '../../smallComponents/TitleComp.vue'
+
     export default {
-        name: 'ParagraphComp'
+        name: 'ParagraphComp',
+
+        components:{
+            TitleComp
+        },
+
+        data(){
+            return{
+                smallText: 'how we work',
+                title: 'Upgrade Your Skills',
+                colorText: 'Upgrade Your Life'
+            } 
+        }
     }
+
 </script>
 
 <style lang="scss" scoped>
@@ -28,51 +42,18 @@
     @import '../../../style/variabili.scss';
     @import '../../../style/mixin.scss';
 
-    div {
+    #contenitore{
         width: 40%;
 
-        // MaxCoach
-        p:nth-of-type(1) {
-
-            font-weight: 500;
-            color: $color-gunSmoke;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-
-            span {
-                color: $color-stormDust;
-                font-weight: 700;
-            }
-
-        }
-
-        // Titolo
-        h2 {
-            font-size: $font-titleh2;
-            margin-bottom: 10px;
-
-            span {
-                color: $color-mountainMeadow;
-                font-weight: 100;
-            }
-        }
-
         // Testo del paragrafo
-        p:nth-of-type(2) {
-            font-size: $font-sizeNavbar;
-            font-weight: 500;
-            line-height: 20px;
-            color: $color-gunSmoke;
+        .paragraph {
             margin-bottom: 25px;
         }
 
-        // Have a question?
-        p:nth-of-type(3) {
-            font-size: $font-sizeNavbar;
-            font-weight: 1000;
+        // Download free
+        p:nth-of-type(2) {
+            @include font($font-sizeNavbar, 1000, $color-stormDust);
             text-decoration: underline;
-            color: $color-stormDust;
-
         }
 
     }

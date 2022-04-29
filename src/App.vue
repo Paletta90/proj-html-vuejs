@@ -61,5 +61,24 @@
       border: 7px solid $color-texasRose;
     }
 
+    .small-title {
+      @include font(initial, 500, $color-gunSmoke);
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .paragraph {
+      @include font($font-sizeNavbar, 500, $color-gunSmoke);
+      line-height: 20px;
+    }
+
+    .textColor{
+      @include font($font-titleh2, 100, $color-mountainMeadow);
+    }
+
+    .text-center{
+      text-align: center;
+    }
+
   }
 </style>

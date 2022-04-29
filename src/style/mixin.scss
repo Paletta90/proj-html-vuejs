@@ -25,3 +25,10 @@
     width: $percent;
     margin: 0 auto;
 }
+
+// Mixin per font size, weight, color
+@mixin font($size, $weight, $color){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
