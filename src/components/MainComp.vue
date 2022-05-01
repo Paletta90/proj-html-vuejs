@@ -26,6 +26,9 @@
             <!-- Sesta sezione -->
             <SixthSection />
 
+            <!-- Settima sezione -->
+            <SeventhSection />
+
         </div>
 
     </div>
@@ -42,6 +45,7 @@
     import FourthSection from './partial/section4/FourthSection.vue'
     import FifthSection from './partial/section5/FifthSection.vue'
     import SixthSection from './partial/section6/SixthSection.vue'
+    import SeventhSection from './partial/section7/SeventhSection.vue'
 
     export default {
         name: 'MainComp',
@@ -53,7 +57,8 @@
             ThirdSection,
             FourthSection,
             FifthSection,
-            SixthSection
+            SixthSection,
+            SeventhSection
         }
     }
 </script>
