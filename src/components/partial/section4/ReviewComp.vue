@@ -74,8 +74,8 @@
     @import '../../../style/variabili.scss';
 
     #contenitore {
-        width: calc(60% - 100px);
-        margin-left: 100px;
+        width: calc(60% - 50px);
+        margin-left: 50px;
 
         .textBold {
             margin-bottom: 10px;

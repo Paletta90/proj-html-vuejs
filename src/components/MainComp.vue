@@ -20,6 +20,9 @@
             <!-- Quarta sezione -->
             <FourthSection />
 
+            <!-- Quinta sezione -->
+            <FifthSection />
+
         </div>
 
     </div>
@@ -34,6 +37,7 @@
     import SecondSection from './partial/section2/SecondSection.vue'
     import ThirdSection from './partial/section3/ThirdSection.vue'
     import FourthSection from './partial/section4/FourthSection.vue'
+    import FifthSection from './partial/section5/FifthSection.vue'
 
     export default {
         name: 'MainComp',
@@ -43,7 +47,8 @@
             FirstSection,
             SecondSection,
             ThirdSection,
-            FourthSection
+            FourthSection,
+            FifthSection
         }
     }
 </script>

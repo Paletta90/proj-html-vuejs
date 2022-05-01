@@ -21,7 +21,7 @@
             title: String,
             title2: String,
             colorText: String,
-            paragraph: String
+            paragraph: String,
         }
     }
 </script>
