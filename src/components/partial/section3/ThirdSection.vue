@@ -36,7 +36,7 @@
 <script>
     // Import components
     import TitleComp from '../../smallComponents/TitleComp.vue'
-    import ThreeCard from './ThreeCard.vue'
+    import ThreeCard from '../../smallComponents/ThreeCard.vue'
 
     export default {
         name: 'ThirdSection',
@@ -56,6 +56,7 @@
                 // ThreeCard
                 cards: [{
                         image: 'course-02-480x298.jpg',
+                        type: 'course',
                         price: '$40',
                         rest: '.00',
                         description: 'Learning to Write as a Professional Author',
@@ -66,6 +67,7 @@
                     },
                     {
                         image: 'stock-full-hd-03-480x298.jpg',
+                        type: 'course',
                         price: '$0',
                         rest: '.00',
                         description: 'Customer-centric Info-Tech Strategies',
@@ -76,6 +78,7 @@
                     },
                     {
                         image: 'stock-full-hd-04-480x298.jpg',
+                        type: 'course',
                         price: '$19',
                         rest: '.00',
                         description: 'Open Programming Courses for Everyone: Python',

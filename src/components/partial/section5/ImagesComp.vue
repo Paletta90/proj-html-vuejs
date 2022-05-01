@@ -2,12 +2,11 @@
 
     <div id="contenitore">
 
-        <div>
             <img src="../../../assets/image/home-3-team-image.png" alt="Tre immagini di volti" width="100%">
             <img src="../../../assets/background/maxcoach-shape-05.png" alt="Rombo punteggiato" width="25%">
             <img src="../../../assets/background/maxcoach-shape-07.png" alt="Griglia punteggiata" width="25%">
             <img src="../../../assets/background/maxcoach-shape-01.png" alt="Linee colorate" width="25%">
-        </div>
+            <div class="circle"></div>
 
     </div>
 
@@ -21,6 +20,7 @@
 </script>
 
 <style lang="scss" scoped>
+
     #contenitore {
         width: calc(60% - 50px);
         margin-right: 50px;
@@ -47,13 +47,20 @@
             transform: translate(0, +60%);
             z-index: 0;
         }
+        // Linee colorate
         img:nth-of-type(4) {
             position: absolute;
             bottom: 0%;
             right: 125%;
             z-index: 0;
         }
-
+        // Cerchio colorato
+        .circle{
+            position: absolute;
+            top: 0%;
+            left: 100%;
+        }
         
     }
+
 </style>

@@ -5,15 +5,20 @@
         <!-- Immagina sinistra -->
         <div class="card" v-for="(elem, index) in cards" :key="index">
             <!-- Immagine -->
-            <img :src="require(`../../../assets/image/${String(elem.image)}`)" alt="" width="100%">
+            <img :src="require(`../../assets/image/${String(elem.image)}`)" alt="" width="100%">
 
             <div class="description-card">
 
-                <!-- Prezzo -->
-                <p class="price">{{elem.price}}<span style="font-size: 0.8rem">{{elem.rest}}</span> </p>
+                <div>
+                    <!-- Prezzo -->
+                    <p v-if="elem.type == 'course'" class="price">{{elem.price}}<span
+                            style="font-size: 0.8rem">{{elem.rest}}</span> </p>
+                    <p v-if="elem.type == 'blog'" class="textType">{{elem.price}}</p>
 
-                <!-- Descrizione -->
-                <p class="description">{{elem.description}}</p>
+                    <!-- Descrizione -->
+                    <p class="description">{{elem.description}}</p>
+                </div>
+
 
                 <div class="paragraph">
 
@@ -37,7 +42,7 @@
     export default {
         name: 'ThreeCard',
 
-        props:{
+        props: {
             cards: []
         }
     }
@@ -45,8 +50,8 @@
 
 <style lang="scss" scoped>
     // import file.scss
-    @import '../../../style/variabili.scss';
-    @import '../../../style/mixin.scss';
+    @import '../../style/variabili.scss';
+    @import '../../style/mixin.scss';
 
     #contenitore {
         width: 100%;
@@ -54,10 +59,10 @@
 
         .card {
             width: calc((100% / 3) - 20px);
-            @include flex(column, space-between, initial);
             margin: 0 10px;
             cursor: pointer;
 
+            // Hover sulla card: la scritta si colora
             &:hover {
                 .description {
                     color: $color-mountainMeadow;
@@ -72,6 +77,12 @@
                 // prezzo
                 .price {
                     @include font(initial, 700, $color-mountainMeadow);
+                    margin-bottom: 10px;
+                }
+
+                .textType {
+                    @include font($font-sizeNavbar, 500, $color-gunSmoke);
+                    text-transform: uppercase;
                     margin-bottom: 10px;
                 }
 

@@ -28,10 +28,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    // Import componets
+    @import '../../../style/mixin.scss';
 
     section{
         padding: 50px 0;
-        display: flex;
+        @include flex(row, initial, center)
     }
 
 </style>
