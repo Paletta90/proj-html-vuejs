@@ -17,9 +17,9 @@
 
 <script>
     // Import components
-    import NavbarComp from './partial/NavbarComp.vue'
-    import LogoComp from './partial/LogoComp.vue'
-    import InputComp from './partial/InputComp.vue'
+    import NavbarComp from './partial/header/NavbarComp.vue'
+    import LogoComp from './partial/header/LogoComp.vue'
+    import InputComp from './partial/header/InputComp.vue'
 
     export default {
         name: 'HeaderComp',

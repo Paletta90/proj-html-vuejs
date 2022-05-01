@@ -75,7 +75,9 @@
     .textColor{
       @include font($font-titleh2, 100, $color-mountainMeadow);
     }
-
+    .textBold{
+      @include font($font-sizeNavbar, 1000, $color-stormDust);
+    }
     .text-center{
       text-align: center;
     }

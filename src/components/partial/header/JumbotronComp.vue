@@ -28,12 +28,12 @@
 <style lang="scss" scoped>
 
     // import file.scss
-    @import '../../style/mixin.scss';
-    @import '../../style/variabili.scss';
+    @import '../../../style/mixin.scss';
+    @import '../../../style/variabili.scss';
 
     section {
         height: 70vh;
-        background-image: url('../../assets/image/jumbotron.jpg');
+        background-image: url('../../../assets/image/jumbotron.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

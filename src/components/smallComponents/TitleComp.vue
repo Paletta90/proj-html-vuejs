@@ -2,9 +2,10 @@
 
     <div>
 
-        <p class="small-title">{{smallText}}</p>
+        <p class="small-title">{{smallText}} <span>{{smallText2}}</span> </p>
 
-        <h2>{{title}} <span class="textColor">{{colorText}}</span></h2>
+        <h2>{{title}} <span class="textColor">{{colorText}}</span> {{title2}}</h2>
+        <p class="paragraph">{{paragraph}}</p>
 
     </div>
 
@@ -16,8 +17,11 @@
 
         props: {
             smallText: String,
+            smallText2: String,
             title: String,
-            colorText:String
+            title2: String,
+            colorText: String,
+            paragraph: String
         }
     }
 </script>
@@ -27,9 +31,20 @@
     @import '../../style/mixin.scss';
     @import '../../style/variabili.scss';
 
+    // Small text
+    .small-title {
+        span {
+            @include font(initial, 700, $color-stormDust);
+        }
+    }
+
     // Titolo
     h2 {
         font-size: $font-titleh2;
         margin-bottom: 10px;
+    }
+
+    .paragraph {
+        margin-bottom: 25px;
     }
 </style>

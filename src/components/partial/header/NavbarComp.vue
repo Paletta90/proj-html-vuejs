@@ -33,8 +33,8 @@
 
 <style lang="scss" scoped>
     // Import file.scss
-    @import '../../style/mixin.scss';
-    @import '../../style/variabili.scss';
+    @import '../../../style/mixin.scss';
+    @import '../../../style/variabili.scss';
 
     ul {
         @include listHorizontal();

@@ -1,14 +1,10 @@
 <template>
 
     <!-- Descrizione di sinistra -->
-    <div>
+    <div id="contenitore">
 
-        <p class="small-title">Everything in <span>maxcoach</span></p>
-
-        <h2>Learn about out <span class="textColor">Work Culture</span> at MaxCoach</h2>
-
-        <p class="paragraph">Spend some time to visit out website or head office and discover out current courses, enrollment
-            procedure, and registration deadline. We're opening new classes every beginning of each month</p>
+        <TitleComp :smallText="smallText" :smallText2="smallText2" :title="title" :colorText="colorText"
+            :paragraph="paragraph" :title2="title2" />
 
         <p>Have a questions? <span>Get Free guide <i class="fa-solid fa-right-long"></i></span></p>
 
@@ -17,9 +13,26 @@
 </template>
 
 <script>
+    // Import Components
+    import TitleComp from '../../smallComponents/TitleComp.vue'
+
     export default {
         name: 'ParagraphComp',
 
+        components:{
+            TitleComp
+        },
+
+        data() {
+            return {
+                smallText: 'everything in ',
+                smallText2: 'maxcoach',
+                title: 'Learn about out ',
+                colorText: 'Work Culture',
+                title2: 'at MaxCoach',
+                paragraph: 'Spend some time to visit out website or head office and discover out current courses, enrollment procedure, and registration deadline. We re opening new classes every beginning of each month'
+            }
+        }
     }
 </script>
 
@@ -28,33 +41,13 @@
     @import '../../../style/variabili.scss';
     @import '../../../style/mixin.scss';
 
-    div {
+    #contenitore {
 
         width: calc(40% - 25px);
         margin-right: 25px;
 
-        // MaxCoach
-        .small-title {
-
-            span {
-                @include font(initial, 700, $color-stormDust);
-            }
-
-        }
-
-        // Titolo
-        h2 {
-            font-size: $font-titleh2;
-            margin-bottom: 10px;
-        }
-
-        // Testo del paragrafo
-        .paragraph {
-            margin-bottom: 25px;
-        }
-
         // Have a question?
-        p:nth-of-type(3) {
+        p{
             @include font($font-sizeNavbar, 500, $color-stormDust);
 
             span {

@@ -30,6 +30,6 @@
 
     section {
         @include flex(row, initial, center);
-        padding: 50px 0;
+        padding: 100px 0;
     }
 </style>

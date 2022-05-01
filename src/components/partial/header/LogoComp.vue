@@ -3,7 +3,7 @@
     <!-- Immagine logo MaxCoach -->
     <div>
 
-        <img src="../../assets/loghi/dark-logo.png" alt="immagine logo MaxCoach" width="150px">
+        <img src="../../../assets/loghi/dark-logo.png" alt="immagine logo MaxCoach" width="150px">
 
     </div>
 
@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
 
     // Import file.scss
-    @import '../../style/mixin.scss';
+    @import '../../../style/mixin.scss';
 
     div{
         // Flexo il logo per centrarlo

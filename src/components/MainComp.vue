@@ -17,6 +17,9 @@
             <!-- Terza sezione -->
             <ThirdSection />
 
+            <!-- Quarta sezione -->
+            <FourthSection />
+
         </div>
 
     </div>
@@ -26,10 +29,11 @@
 
 <script>
     // Import components
-    import JumbotronComp from './partial/JumbotronComp.vue'
+    import JumbotronComp from './partial/header/JumbotronComp.vue'
     import FirstSection from './partial/section1/FirstSection.vue'
     import SecondSection from './partial/section2/SecondSection.vue'
     import ThirdSection from './partial/section3/ThirdSection.vue'
+    import FourthSection from './partial/section4/FourthSection.vue'
 
     export default {
         name: 'MainComp',
@@ -38,7 +42,8 @@
             JumbotronComp,
             FirstSection,
             SecondSection,
-            ThirdSection
+            ThirdSection,
+            FourthSection
         }
     }
 </script>
@@ -46,8 +51,10 @@
 <style lang="scss" scoped>
     // Import file.scss
     @import '../style/mixin.scss';
-
+    div{
+        background-color: antiquewhite;
+    }
     #container{
-        @include center-x(60%)
+        @include center-x(60%);
     }
 </style>
