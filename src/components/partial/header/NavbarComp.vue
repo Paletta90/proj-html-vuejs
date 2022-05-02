@@ -7,8 +7,8 @@
 
             <li v-for="(elem, index) in arrayNavbar" :key="index">
 
-                <!-- Nome del dropdown -->
-                {{elem}}
+                <!-- Nomi del menu -->
+                <a href="#">{{elem}}</a>
                 <!-- Icona di fianco -->
                 <i class="fa-solid fa-chevron-down"></i>
 
@@ -40,14 +40,16 @@
         @include listHorizontal();
 
         li {
-            // Flexo i nomi con le icone di lato
             @include flex(row, initial, center);
-            color: $font-colorNavbar;
-            font-size: $font-sizeNavbar;
-            font-weight: 600;
             margin-right: 15px;
-            cursor: pointer;
+            a{
+                @include font($font-sizeNavbar, 600, $font-colorNavbar);
+                text-decoration: none;
 
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
             i{
                 margin-left: 5px;
                 font-size: 0.5rem;

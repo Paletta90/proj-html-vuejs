@@ -7,7 +7,7 @@
             <div class="center">
 
                 <div class="text-center">
-                    <TitleComp :smallText="smallText" :title="title" :colorText="colorText" />
+                    <ParagraphComp :smallText="smallText" :title="title" :colorText="colorText" />
                 </div>
 
                 <ThreeCard :cards="this.cards" />
@@ -45,14 +45,14 @@
 
 <script>
     // Import components
-    import TitleComp from '../../smallComponents/TitleComp.vue'
+    import ParagraphComp from '../../smallComponents/ParagraphComp.vue'
     import ThreeCard from '../../smallComponents/ThreeCard.vue'
 
     export default {
         name: 'ThirdSection',
 
         components: {
-            TitleComp,
+            ParagraphComp,
             ThreeCard,
         },
 

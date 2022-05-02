@@ -50,7 +50,7 @@
         @include flex(row, flex-end, center);
 
         .icons {
-            
+            cursor: pointer;
             margin-right: 15px;
 
             .carrello{
@@ -68,7 +68,7 @@
                 // Centro il numero dentro al cerchio
                 @include flex(row, center, center);
 
-                // Con position metto il cerchio in alot a destra del carrello
+                // Con position metto il cerchio in alto a destra del carrello
                 position: absolute;
                 bottom: 12px;
                 left: 12px;

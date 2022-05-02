@@ -5,31 +5,26 @@
         <!-- Section Jumbotron -->
         <JumbotronComp />
 
-        <!-- Contenitore selle sezione centrate al x% -->
-        <div>
+        <!-- Prima sezione -->
+        <FirstSection />
 
-            <!-- Prima sezione -->
-            <FirstSection />
+        <!-- Seconda sezione -->
+        <SecondSection />
 
-            <!-- Seconda sezione -->
-            <SecondSection />
+        <!-- Terza sezione -->
+        <ThirdSection />
 
-            <!-- Terza sezione -->
-            <ThirdSection />
+        <!-- Quarta sezione -->
+        <FourthSection />
 
-            <!-- Quarta sezione -->
-            <FourthSection />
+        <!-- Quinta sezione -->
+        <FifthSection />
 
-            <!-- Quinta sezione -->
-            <FifthSection />
+        <!-- Sesta sezione -->
+        <SixthSection />
 
-            <!-- Sesta sezione -->
-            <SixthSection />
-
-            <!-- Settima sezione -->
-            <SeventhSection />
-
-        </div>
+        <!-- Settima sezione -->
+        <SeventhSection />
 
     </div>
 
@@ -64,10 +59,5 @@
 </script>
 
 <style lang="scss" scoped>
-    // Import file.scss
-    @import '../style/mixin.scss';
-    
-    #container{
-        @include center-x(60%);
-    }
+
 </style>

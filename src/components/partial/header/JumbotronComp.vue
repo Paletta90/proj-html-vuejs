@@ -45,18 +45,15 @@
             margin-bottom: 15px;
         }
         h1{
-            color: white;
-            font-weight: 100;
-            font-size: $font-titleh1;
+            @include font($font-titleh1, 100, white);
             margin-bottom: 15px;
         }
 
         .button{
+            @include font(initial, 800, $color-mountainMeadow);
             padding: 15px 20px;
             border-radius: 5px;
             background-color: white;
-            font-weight: 800;
-            color: $color-mountainMeadow;
             cursor: pointer;
 
             &:hover{

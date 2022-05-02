@@ -5,7 +5,7 @@
         <!-- Titolo -->
         <div class="text-center">
 
-            <TitleComp :title="title" :colorText="colorText" :paragraph="paragraph" />
+            <ParagraphComp :title="title" :colorText="colorText" :paragraph="paragraph" />
 
         </div>
 
@@ -27,12 +27,12 @@
 
 <script>
     // import components
-    import TitleComp from '../../smallComponents/TitleComp.vue'
+    import ParagraphComp from '../../smallComponents/ParagraphComp.vue'
     export default {
         name: 'SeventhSection',
 
         components: {
-            TitleComp
+            ParagraphComp
         },
 
         data() {

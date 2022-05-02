@@ -47,16 +47,12 @@
     @import '../style/mixin.scss';
 
     #header{
-        // Centro al x%
         @include center-x(90%);
-        // Flex orizzonatalmente header
         @include flex(row, space-between, center);
-
         padding: 20px 0;
 
         div{
             width: calc(100% / 3);
-            // @include flex(row, space-between, center);
         }
 
     }

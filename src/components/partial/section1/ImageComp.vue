@@ -1,9 +1,12 @@
 <template>
+
     <!-- Immagine di destra -->
     <div class="block-right">
 
+        <!-- Cerchio colorato -->
         <div class="circle"></div>
 
+        <!-- Immagini incastrate con position -->
         <div>
 
             <img src="../../../assets/background/maxcoach-shape-07-100x100.png" alt="Griglia punteggiata" width="25%">
