@@ -7,6 +7,8 @@
 
         <div class="paragrafo">
 
+            <div class="circle"></div>
+
             <ParagraphComp :smallText="smallText" :smallText2="smallText2" :title="title" :colorText="colorText"
                 :paragraph="paragraph" :title2="title2" />
 
@@ -57,20 +59,26 @@
 
         .paragrafo {
             width: 40%;
-        }
+            position: relative;
 
-        span {
+            .circle{
+                position: absolute;
+                bottom: 120%;
+            }
+            span {
             padding: 15px 40px;
             border-radius: 5px;
             background-color: $color-mountainMeadow;
             @include font(initial, 700, white);
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 background-color: $color-quillGray;
 
                 color: $color-mountainMeadow;
             }
         }
+        }
+
     }
 </style>

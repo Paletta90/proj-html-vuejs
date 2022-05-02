@@ -7,7 +7,6 @@
         <img src="../../../assets/icon/icon-youtube-play.png" alt="Icona youtube" width="15%">
         <img src="../../../assets/background/maxcoach-shape-05-100x100.png" alt="Rombo punteggiato" width="20%">
         <img src="../../../assets/background/maxcoach-shape-07-100x100.png" alt="Griglia punteggiata" width="20%">
-        <div class="circle"></div>
 
     </div>
 
@@ -50,12 +49,6 @@ export default {
             z-index: -1;
         }
 
-        .circle{
-            position: absolute;
-            bottom: 100%;
-            left: 110%;
-            z-index: -1;
-        }
     }
 
 </style>

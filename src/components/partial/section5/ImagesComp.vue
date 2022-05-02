@@ -6,7 +6,6 @@
             <img src="../../../assets/background/maxcoach-shape-05.png" alt="Rombo punteggiato" width="25%">
             <img src="../../../assets/background/maxcoach-shape-07.png" alt="Griglia punteggiata" width="25%">
             <img src="../../../assets/background/maxcoach-shape-01.png" alt="Linee colorate" width="25%">
-            <div class="circle"></div>
 
     </div>
 

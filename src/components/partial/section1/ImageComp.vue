@@ -39,7 +39,7 @@
 
         .circle {
             position: absolute;
-            left: -35%;
+            left: -30%;
         }
 
 

@@ -7,6 +7,7 @@
         <!-- Descrizione di destra -->
         <div class="paragrafo">
 
+            <div class="circle"></div>
             <ParagraphComp :smallText="smallText" :title="title" :colorText="colorText" :paragraph="paragraph" />
 
             <p class="textBold">Download free guidebook <i class="fa-solid fa-right-long"></i></p>
@@ -52,13 +53,17 @@
 
         .paragrafo {
             width: 40%;
-
+            position: relative;
             // Download free
             .textBold {
                 text-decoration: underline;
                 cursor: pointer;
             }
-
+            .circle{
+                position: absolute;
+                bottom: 120%;
+                z-index: 1;
+            }
         }
     }
 </style>

@@ -73,7 +73,7 @@
 
                 width: calc(40% - 25px);
                 margin-right: 25px;
-
+                
                 // Have a question?
                 .paragraph {
                     span {
