@@ -80,7 +80,7 @@
 
     section {
         background-color: #f9f9f9;
-        margin: 50px 0;
+        margin-top: 50px;
         padding: 100px 0;
 
         .center{

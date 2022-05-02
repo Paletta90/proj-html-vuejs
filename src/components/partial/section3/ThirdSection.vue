@@ -146,7 +146,7 @@
 
         .wave {
             text-align: center;
-            padding: 50px 0;
+            padding: 100px 0;
             background-image: url('../../../assets/image/wave.png');
             background-position: center;
             background-repeat: no-repeat;
