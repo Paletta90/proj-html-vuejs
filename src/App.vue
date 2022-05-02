@@ -17,6 +17,13 @@
 
     </main>
 
+    <!-- Footer -->
+    <footer>
+
+      <FooterComp />
+
+    </footer>
+
   </div>
 
 </template>
@@ -25,6 +32,7 @@
   // Import components
   import HeaderComp from './components/HeaderComp.vue'
   import MainComp from './components/MainComp.vue'
+  import FooterComp from './components/FooterComp.vue'
 
   export default {
 
@@ -32,7 +40,8 @@
 
     components: {
       HeaderComp,
-      MainComp
+      MainComp,
+      FooterComp
     }
 
   }
@@ -53,6 +62,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    footer{
+      background-color: $color-vulcan;
+    }
     // Utility
     .circle {
       width: 55px;

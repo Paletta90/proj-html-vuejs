@@ -2,12 +2,19 @@
 
     <section>
 
-        <div class="text-center">
-            <TitleComp :smallText="smallText" :title="title" :colorText="colorText" />
+        <!-- Sezione con le tre card -->
+        <div class="bg-cards">
+            <div class="center">
+
+                <div class="text-center">
+                    <TitleComp :smallText="smallText" :title="title" :colorText="colorText" />
+                </div>
+
+                <ThreeCard :cards="this.cards" />
+            </div>
         </div>
 
-        <ThreeCard :cards="this.cards" />
-
+        <!-- Background con l'onda -->
         <div class="wave">
 
             <div>
@@ -29,6 +36,9 @@
 
 
         </div>
+
+
+
     </section>
 
 </template>
@@ -100,9 +110,17 @@
     @import '../../../style/variabili.scss';
 
     section {
+
         padding: 100px 0;
+
         .text-center {
             margin-bottom: 50px;
+        }
+        .center{
+             @include center-x(60%);
+        }
+        .bg-cards {
+            background-image: linear-gradient(white, #f7f7f7)
         }
 
         .list-circle {
@@ -128,8 +146,11 @@
 
         .wave {
             text-align: center;
-            @include center-x(50%);
-            margin-top: 50px;
+            padding: 50px 0;
+            background-image: url('../../../assets/image/wave.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 </style>

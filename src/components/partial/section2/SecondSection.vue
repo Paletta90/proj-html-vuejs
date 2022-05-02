@@ -29,6 +29,7 @@
     @import '../../../style/mixin.scss';
 
     section {
+        @include center-x(60%);
         @include flex(row, initial, center);
         padding: 100px 0;
     }

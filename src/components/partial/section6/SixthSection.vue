@@ -2,11 +2,14 @@
 
     <section>
 
-        <div class="text-center">
-            <TitleComp :smallText="smallText" :title="title" :colorText="colorText" />
+        <div class="center">
+            <div class="text-center">
+                <TitleComp :smallText="smallText" :title="title" :colorText="colorText" />
+            </div>
+
+            <ThreeCard :cards="this.cards" />
         </div>
 
-        <ThreeCard :cards="this.cards" />
 
     </section>
 
@@ -25,8 +28,8 @@
             ThreeCard,
         },
 
-        data(){
-            return{
+        data() {
+            return {
                 // TitleComp
                 smallText: 'read for more joyment',
                 title: 'Latest from',
@@ -73,9 +76,15 @@
 </script>
 
 <style lang="scss" scoped>
+    @import '../../../style/mixin.scss';
 
-    section{
+    section {
+        background-color: #f9f9f9;
+        margin: 50px 0;
         padding: 100px 0;
-    }
 
+        .center{
+            @include center-x(60%)
+        }
+    }
 </style>

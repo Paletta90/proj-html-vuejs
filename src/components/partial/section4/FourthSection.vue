@@ -34,6 +34,7 @@
     @import '../../../style/variabili.scss';
 
     section {
+        @include center-x(60%);
         @include flex(row, initial, center);
         padding: 50px 0;
     }

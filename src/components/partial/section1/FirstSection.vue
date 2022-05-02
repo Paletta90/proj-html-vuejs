@@ -36,9 +36,10 @@
 <style lang="scss" scoped>
     // import file.scss
     @import '../../../style/variabili.scss';
+    @import '../../../style/mixin.scss';
 
     section {
-        width: 100%;
+        @include center-x(60%);
         padding: 100px 0;
 
         .block{

@@ -32,6 +32,7 @@ export default {
     @import '../../../style/mixin.scss';
 
     section{
+        @include center-x(60%);
         padding: 50px 0;
         @include flex(row, initial, center)
     }

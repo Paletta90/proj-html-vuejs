@@ -52,7 +52,7 @@
     @import '../../../style/variabili.scss';
 
     section {
-        @include center-x(50%);
+        @include center-x(30%);
         position: relative;
         padding: 50px 0;
 

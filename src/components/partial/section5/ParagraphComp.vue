@@ -2,7 +2,7 @@
 
     <div id="contenitore">
 
-        <TitleComp x="x" :smallText="smallText" :smallText2="smallText2" :title="title" :colorText="colorText"
+        <TitleComp :smallText="smallText" :smallText2="smallText2" :title="title" :colorText="colorText"
             :paragraph="paragraph" :title2="title2" />
 
         <span>
@@ -26,7 +26,6 @@
 
         data() {
             return {
-                x: '&#x00027;',
                 smallText: 'everything in ',
                 smallText2: 'maxcoach',
                 title: 'We`re Here To',

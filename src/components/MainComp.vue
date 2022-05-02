@@ -6,7 +6,7 @@
         <JumbotronComp />
 
         <!-- Contenitore selle sezione centrate al x% -->
-        <div id="container">
+        <div>
 
             <!-- Prima sezione -->
             <FirstSection />
@@ -66,9 +66,7 @@
 <style lang="scss" scoped>
     // Import file.scss
     @import '../style/mixin.scss';
-    div{
-        background-color: antiquewhite;
-    }
+    
     #container{
         @include center-x(60%);
     }
