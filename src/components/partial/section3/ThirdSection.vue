@@ -151,6 +151,14 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+
+            .textBold{
+                cursor: pointer;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
     }
 </style>

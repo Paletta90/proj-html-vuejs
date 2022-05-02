@@ -63,7 +63,14 @@
             padding: 15px 40px;
             border-radius: 5px;
             background-color: $color-mountainMeadow;
-            @include font(initial, 700, white)
+            @include font(initial, 700, white);
+            cursor: pointer;
+
+            &:hover{
+                background-color: $color-quillGray;
+
+                color: $color-mountainMeadow;
+            }
         }
     }
 </style>

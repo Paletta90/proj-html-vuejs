@@ -62,6 +62,7 @@
             // View All
             .textBold {
                 text-decoration: underline;
+                cursor: pointer;
             }
         }
     }

@@ -75,11 +75,12 @@
                 margin-right: 25px;
 
                 // Have a question?
-                p {
+                .paragraph {
                     span {
                         @include font($font-sizeNavbar, 700, $color-mountainMeadow);
                         text-decoration: underline;
                         text-decoration-color: $color-gunSmoke;
+                        cursor: pointer;
                     }
                 }
 

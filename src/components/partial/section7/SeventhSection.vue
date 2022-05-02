@@ -13,7 +13,7 @@
         <div>
 
             <input type="text" placeholder="Enter your email">
-            <button>Subscribe</button>
+            <button type="submit">Subscribe</button>
 
         </div>
 
@@ -76,6 +76,7 @@
 
             button {
                 background-color: $color-mountainMeadow;
+                @include font($font-sizeNavbar, 700, white);
                 border-radius: 0 5px 5px 0;
             }
 

@@ -56,6 +56,7 @@
             // Download free
             .textBold {
                 text-decoration: underline;
+                cursor: pointer;
             }
 
         }
